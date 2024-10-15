@@ -51,7 +51,7 @@ const LoginForm = () => {
           placeholder="email"
           autoComplete="email"
           {...register("email")}
-          className="mt-2 w-full rounded-md px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-100 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="mt-2 w-full rounded-md border-gray-200 text-sm text-gray-900 shadow-sm"
         />
         {errors?.email ? (
           <p className="mt-2 text-sm text-red-500">{errors.email?.message}</p>
@@ -70,7 +70,7 @@ const LoginForm = () => {
           type="password"
           placeholder="password"
           {...register("password")}
-          className="mt-2 w-full rounded-md px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-100 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="mt-2 w-full rounded-md border-gray-200 text-sm text-gray-900 shadow-sm"
         />
         {errors?.password ? (
           <p className="mt-2 text-sm text-red-500">
