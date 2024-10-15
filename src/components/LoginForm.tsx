@@ -49,13 +49,12 @@ const LoginForm = () => {
           id="email"
           type="text"
           placeholder="email"
+          autoComplete="email"
           {...register("email")}
           className="mt-2 w-full rounded-md px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-100 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         {errors?.email ? (
-          <p className="mt-2 text-sm font-medium text-red-500">
-            {errors.email?.message}
-          </p>
+          <p className="mt-2 text-sm text-red-500">{errors.email?.message}</p>
         ) : null}
       </div>
 
@@ -74,7 +73,7 @@ const LoginForm = () => {
           className="mt-2 w-full rounded-md px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-100 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         {errors?.password ? (
-          <p className="mt-2 text-sm font-medium text-red-500">
+          <p className="mt-2 text-sm text-red-500">
             {errors.password?.message}
           </p>
         ) : null}
@@ -82,16 +81,14 @@ const LoginForm = () => {
 
       <button
         type="submit"
-        className="w-full rounded-md bg-blue-700 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-700/80 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+        className="h-10 w-full rounded-md bg-blue-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-600/80 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
       >
         Log in
       </button>
 
       <div>
         {errors.root ? (
-          <p className="mt-2 text-sm font-medium text-red-500">
-            {errors.root?.message}
-          </p>
+          <p className="mt-2 text-sm text-red-500">{errors.root?.message}</p>
         ) : null}
       </div>
     </form>

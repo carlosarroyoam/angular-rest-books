@@ -14,15 +14,22 @@ export default async function Home() {
           {books.map((book) => (
             <div
               key={book.id}
-              className="w-96 rounded-md bg-gray-200 px-6 py-4"
+              className="w-96 rounded-md bg-gray-100 px-6 py-4"
             >
-              <div className="flex items-center justify-between">
-                <h3 className="text-gray-900">{book.title}</h3>
+              <div className="space-x-2">
+                {book.authors.map((author) => (
+                  <span key={author.id} className="text-sm">
+                    {author.name}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-2 flex items-center justify-between">
+                <h3 className="text-lg text-gray-900">{book.title}</h3>
                 <p className="text-sm font-medium text-gray-900">
                   ${book.price}
                 </p>
               </div>
-              <p className="mt-2 text-sm text-gray-700">
+              <p className="mt-2 text-sm">
                 {new Intl.DateTimeFormat("es-MX", { dateStyle: "long" }).format(
                   new Date(book.published_at),
                 )}

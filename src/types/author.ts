@@ -1,6 +1,6 @@
 export interface Author {
-  userId: number;
   id: number;
-  title: string;
-  completed: boolean;
+  name: string;
+  created_at: Date;
+  updated_at: Date;
 }

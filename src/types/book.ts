@@ -1,3 +1,5 @@
+import { Author } from "./author";
+
 export interface Book {
   id: number;
   title: string;
@@ -7,4 +9,5 @@ export interface Book {
   published_at: Date;
   created_at: Date;
   updated_at: Date;
+  authors: Author[];
 }

@@ -8,11 +8,11 @@ const Header = async () => {
   if (!session.isAuth) return null;
 
   return (
-    <header className="bg-gray-200 py-4">
+    <header className="bg-gray-100 py-4">
       <div className="container flex items-center justify-between">
         <Link
           href="/dashboard"
-          className="text-xl font-semibold tracking-tight"
+          className="text-xl font-semibold tracking-tight text-gray-900"
         >
           Bookstore
         </Link>
