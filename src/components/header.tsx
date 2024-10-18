@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { getSession, logout } from "@/app/actions";
+import { Button } from "@/components/ui/button";
 
 const Header = async () => {
   const session = await getSession();
@@ -18,12 +19,9 @@ const Header = async () => {
         </Link>
 
         <form action={logout}>
-          <button
-            type="submit"
-            className="rounded-md bg-gray-300 px-4 py-1.5 text-sm font-semibold text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
-          >
+          <Button type="submit" variant={"secondary"}>
             Log out
-          </button>
+          </Button>
         </form>
       </div>
     </header>
