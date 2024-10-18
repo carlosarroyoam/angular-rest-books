@@ -5,6 +5,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { login } from "@/app/actions";
+import { Button } from "@/components/ui/button";
 
 const LoginSchema = z.object({
   email: z.string().min(3).max(128),
@@ -79,12 +80,9 @@ const LoginForm = () => {
         ) : null}
       </div>
 
-      <button
-        type="submit"
-        className="h-10 w-full rounded-md bg-blue-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-blue-600/80 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-      >
+      <Button type="submit" className="w-full">
         Log in
-      </button>
+      </Button>
 
       <div>
         {errors.root ? (

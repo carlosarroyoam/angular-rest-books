@@ -1,4 +1,4 @@
-import UserHeader from "@/components/UserHeader";
+import UserHeader from "@/components/user-header";
 import { fetchBookById, fetchBooks } from "@/lib/fetch";
 
 export default async function Home() {
