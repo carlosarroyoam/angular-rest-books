@@ -42,7 +42,7 @@ const LoginForm = () => {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium leading-6 text-gray-900"
+          className="block text-sm font-medium leading-6 text-zinc-900"
         >
           Email
         </label>
@@ -52,7 +52,7 @@ const LoginForm = () => {
           placeholder="email"
           autoComplete="email"
           {...register("email")}
-          className="mt-2 w-full rounded-md border-gray-200 text-sm text-gray-900 shadow-sm"
+          className="mt-2 w-full rounded-md border-zinc-200 text-sm text-zinc-900 shadow-sm"
         />
         {errors?.email ? (
           <p className="mt-2 text-sm text-red-500">{errors.email?.message}</p>
@@ -62,7 +62,7 @@ const LoginForm = () => {
       <div>
         <label
           htmlFor="password"
-          className="block text-sm font-medium leading-6 text-gray-900"
+          className="block text-sm font-medium leading-6 text-zinc-900"
         >
           Password
         </label>
@@ -71,7 +71,7 @@ const LoginForm = () => {
           type="password"
           placeholder="password"
           {...register("password")}
-          className="mt-2 w-full rounded-md border-gray-200 text-sm text-gray-900 shadow-sm"
+          className="mt-2 w-full rounded-md border-zinc-200 text-sm text-zinc-900 shadow-sm"
         />
         {errors?.password ? (
           <p className="mt-2 text-sm text-red-500">

@@ -3,7 +3,7 @@ import LoginForm from "@/components/login-form";
 const Login = () => {
   return (
     <section className="mx-auto max-w-md">
-      <h2 className="text-2xl font-medium leading-7 tracking-tight text-gray-900">
+      <h2 className="text-2xl font-medium leading-7 tracking-tight text-zinc-900">
         Log in
       </h2>
       <p className="mt-2 text-sm leading-6">

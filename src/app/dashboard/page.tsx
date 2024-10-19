@@ -14,7 +14,7 @@ export default async function Home() {
           {books.map((book) => (
             <div
               key={book.id}
-              className="w-96 rounded-md bg-gray-100 px-6 py-4"
+              className="w-96 rounded-md bg-zinc-100 px-6 py-4"
             >
               <div className="space-x-2">
                 {book.authors.map((author) => (
@@ -24,8 +24,8 @@ export default async function Home() {
                 ))}
               </div>
               <div className="mt-2 flex items-center justify-between">
-                <h3 className="text-lg text-gray-900">{book.title}</h3>
-                <p className="text-sm font-medium text-gray-900">
+                <h3 className="text-lg text-zinc-900">{book.title}</h3>
+                <p className="text-sm font-medium text-zinc-900">
                   ${book.price}
                 </p>
               </div>
