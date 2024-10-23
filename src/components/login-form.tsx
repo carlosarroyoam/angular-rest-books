@@ -49,7 +49,7 @@ const LoginForm = () => {
         <input
           id="email"
           type="text"
-          placeholder="email"
+          placeholder="Enter your email"
           autoComplete="email"
           {...register("email")}
           className="mt-2 w-full rounded-md border-zinc-200 text-sm text-zinc-900 shadow-sm"
@@ -69,7 +69,7 @@ const LoginForm = () => {
         <input
           id="password"
           type="password"
-          placeholder="password"
+          placeholder="Enter your password"
           {...register("password")}
           className="mt-2 w-full rounded-md border-zinc-200 text-sm text-zinc-900 shadow-sm"
         />
