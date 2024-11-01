@@ -12,15 +12,15 @@ export default async function Home() {
       <UserHeader />
 
       {books && (
-        <div className="mt-8 grid grid-cols-4 gap-4">
+        <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-4 2xl:grid-cols-4">
           {books.map((book) => (
             <div key={book.id} className="rounded-md bg-zinc-100">
-              <div className="relative mt-1 h-[520px] w-full overflow-hidden rounded-t-md">
+              <div className="relative h-[520px] overflow-hidden rounded-t-md">
                 <Image
                   src={book.cover_url}
                   alt={`${book.title}'s cover`}
                   fill
-                  className="absolute h-full w-full object-cover"
+                  className="object-cover"
                 />
               </div>
 
