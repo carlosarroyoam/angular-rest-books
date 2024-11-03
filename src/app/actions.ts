@@ -4,8 +4,8 @@ import { getIronSession } from "iron-session";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-import { LoginSchemaType } from "@/components/login-form";
 import { defaultSession, SessionData, sessionOptions } from "@/lib/sessions";
+import { LoginSchemaType } from "@/lib/validations";
 
 export async function getSession() {
   const session = await getIronSession<SessionData>(cookies(), sessionOptions);

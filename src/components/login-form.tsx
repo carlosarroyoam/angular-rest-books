@@ -2,17 +2,10 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { z } from "zod";
 
 import { login } from "@/app/actions";
 import { Button } from "@/components/ui/button";
-
-const LoginSchema = z.object({
-  email: z.string().min(3).max(128),
-  password: z.string().min(3).max(32),
-});
-
-export type LoginSchemaType = z.infer<typeof LoginSchema>;
+import { LoginSchema, LoginSchemaType } from "@/lib/validations";
 
 const LoginForm = () => {
   const {

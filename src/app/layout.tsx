@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+
 import { cn } from "@/lib/utils";
 
 // If loading a variable font, you don't need to specify the font weight

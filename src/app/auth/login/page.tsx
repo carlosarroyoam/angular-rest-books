@@ -1,6 +1,6 @@
 import LoginForm from "@/components/login-form";
 
-const Login = () => {
+export default async function LoginPage() {
   return (
     <section className="mx-auto max-w-md">
       <h2 className="text-2xl font-medium leading-7 tracking-tight text-zinc-900">
@@ -13,6 +13,4 @@ const Login = () => {
       <LoginForm />
     </section>
   );
-};
-
-export default Login;
+}

@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 
-export default function AuthLayout({
+export default function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
